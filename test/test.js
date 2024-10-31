@@ -13,3 +13,8 @@ describe('First two terms', function() {
     });
 });
 
+describe('Negative Numbers', function() {
+    it('should return undefined', function() {
+        assert.strictEqual(main.factorial(-1), undefined);
+    });
+});

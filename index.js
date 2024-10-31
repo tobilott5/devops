@@ -7,5 +7,7 @@ exports.fibonacci = function(n) {
 exports.factorial = function(n) {
     if(n==0 || n==1)
         return 1;
+    if(n < 0)
+        return undefined;
     return (n * this.factorial(n-1));
 }
