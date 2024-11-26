@@ -18,3 +18,15 @@ describe('Negative Numbers', function() {
         assert.strictEqual(main.factorial(-1), undefined);
     });
 });
+
+describe('Zero', function() {
+    it('should return one', function() {
+        assert.strictEqual(main.factorial(0), 1);
+    });
+});
+
+describe('Regular Number', function() {
+    it('should return 120', function() {
+        assert.strictEqual(main.factorial(5), 120);
+    });
+});
